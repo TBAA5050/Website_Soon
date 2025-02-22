@@ -34,7 +34,7 @@ sections:
         color: "navy" # Background color for the hero section
         image:
           # Add your image background to `assets/media/`
-          filename: "bg-traingles.svg" # Background image filename
+          filename: "bg-triangles.svg" # Background image filename
           filters:
             brightness: 0.5 # Brightness filter for the background image
   #- block: stats

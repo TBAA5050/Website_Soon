@@ -76,10 +76,10 @@ outputs:
   home: [HTML, RSS, headers, redirects] # Output formats for the home page
   section: [HTML, RSS] # Output formats for sections
 imaging:
-  resampleFilter: lanczos # Resample filter for images
+  resampleFilter: Lanczos # Resample filter for images
   quality: 95 # Quality of images
-  anchor: smart # Anchor for image cropping
-timeout: 600000 # Timeout for image processing
+  anchor: Smart # Anchor for image cropping
+timeout: 600000s # Timeout for image processing
 taxonomies:
   tag: tags # Taxonomy for tags
   category: categories # Taxonomy for categories
