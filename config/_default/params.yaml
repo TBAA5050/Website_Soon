@@ -36,7 +36,7 @@ header:
     logo:
       text: ""
       # Logo filename in `assets/media/` folder
-      filename: "AlTraderXlogo.png"
+      filename: "logo.png"
     #button:
     #  enable: true
     #  text: "Get Started"
