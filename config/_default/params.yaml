@@ -53,3 +53,13 @@ footer:
 locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
+
+# Social media links
+social:
+  twitter: "https://twitter.com/"
+  linkedin: "https://linkedin.com/in/"
+  github: "https://github.com/"
+
+# Contact information
+contact:
+  email: "contact@altraderx.com"

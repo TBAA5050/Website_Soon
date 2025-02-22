@@ -45,12 +45,21 @@ defaultContentLanguageInSubdir: false
 removePathAccents: true
 
 ############################
+## CUSTOM PARAMETERS
+############################
+
+params:
+  author: "Your Name"
+  description: "A brief description of your website"
+  keywords: ["keyword1", "keyword2", "keyword3"]
+
+############################
 ## ADVANCED
 ############################
 
 build:
   writeStats: true
-enableGitInfo: false
+enableGitInfo: true
 summaryLength: 30
 pagination:
   pagerSize: 10
@@ -83,3 +92,19 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
+
+############################
+## PRIVACY
+############################
+
+privacy:
+  googleAnalytics:
+    anonymizeIP: true
+  disqus:
+    disable: true
+  instagram:
+    disable: true
+  twitter:
+    disable: true
+  youtube:
+    privacyEnhanced: true
