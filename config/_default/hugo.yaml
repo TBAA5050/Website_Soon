@@ -39,59 +39,59 @@ cascade:
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
-removePathAccents: true
+defaultContentLanguage: en # Default language for the content
+hasCJKLanguage: false # Whether the site has CJK (Chinese, Japanese, Korean) language content
+defaultContentLanguageInSubdir: false # Whether to put the default content language in a subdirectory
+removePathAccents: true # Whether to remove accents from paths
 
 ############################
 ## CUSTOM PARAMETERS
 ############################
 
 params:
-  author: "Your Name"
-  description: "A brief description of your website"
-  keywords: ["keyword1", "keyword2", "keyword3"]
+  author: "ALTRADERX" # Author name
+  description: "AI-driven, algorithmic crypto trading with precision, speed, and security—bringing the Future to automated trading." # Description of the website
+  keywords: ["trading", "crypto", "AI"] # Keywords for SEO
 
 ############################
 ## ADVANCED
 ############################
 
 build:
-  writeStats: true
-enableGitInfo: true
-summaryLength: 30
+  writeStats: true # Whether to write build statistics
+enableGitInfo: true # Whether to enable Git information
+summaryLength: 30 # Length of the summary
 pagination:
-  pagerSize: 10
-enableEmoji: true
-enableRobotsTXT: true
-footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
+  pagerSize: 10 # Number of items per page
+enableEmoji: true # Whether to enable emoji support
+enableRobotsTXT: true # Whether to enable robots.txt
+footnotereturnlinkcontents: <sup>^</sup> # Content for footnote return links
+ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$] # Files to ignore
 permalinks:
-  authors: '/author/:slug/'
-  tags: '/tag/:slug/'
-  categories: '/category/:slug/'
-disableAliases: true
+  authors: '/author/:slug/' # Permalink structure for authors
+  tags: '/tag/:slug/' # Permalink structure for tags
+  categories: '/category/:slug/' # Permalink structure for categories
+disableAliases: true # Whether to disable aliases
 outputs:
-  home: [HTML, RSS, headers, redirects]
-  section: [HTML, RSS]
+  home: [HTML, RSS, headers, redirects] # Output formats for the home page
+  section: [HTML, RSS] # Output formats for sections
 imaging:
-  resampleFilter: lanczos
-  quality: 95
-  anchor: smart
-timeout: 600000
+  resampleFilter: lanczos # Resample filter for images
+  quality: 95 # Quality of images
+  anchor: smart # Anchor for image cropping
+timeout: 600000 # Timeout for image processing
 taxonomies:
-  tag: tags
-  category: categories
-  author: authors
+  tag: tags # Taxonomy for tags
+  category: categories # Taxonomy for categories
+  author: authors # Taxonomy for authors
 markup:
-  _merge: deep
+  _merge: deep # Merge strategy for markup configuration
   highlight:
-    lineNos: false
+    lineNos: false # Whether to show line numbers in code highlighting
 security:
-  _merge: deep
+  _merge: deep # Merge strategy for security configuration
 sitemap:
-  _merge: deep
+  _merge: deep # Merge strategy for sitemap configuration
 
 ############################
 ## PRIVACY
@@ -99,12 +99,12 @@ sitemap:
 
 privacy:
   googleAnalytics:
-    anonymizeIP: true
+    anonymizeIP: true # Anonymize IP addresses for Google Analytics
   disqus:
-    disable: true
+    disable: true # Disable Disqus
   instagram:
-    disable: true
+    disable: true # Disable Instagram
   twitter:
-    disable: true
+    disable: true # Disable Twitter
   youtube:
-    privacyEnhanced: true
+    privacyEnhanced: true # Enable privacy-enhanced mode for YouTube
