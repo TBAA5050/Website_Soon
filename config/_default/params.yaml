@@ -5,16 +5,16 @@
 
 # Appearance
 appearance:
-  mode: light
+  mode: dark
   color: indigo
 
 # SEO
 marketing:
   seo:
-    site_type: Person
+    site_type: Business
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo landing page theme powered by Hugo Blox website builder.'
+    description: 'AI-driven, algorithmic crypto trading with precision, speed, and security—bringing the Future to automated trading.'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -37,17 +37,17 @@ header:
       text: ""
       # Logo filename in `assets/media/` folder
       filename: "logo.svg"
-    button:
-      enable: true
-      text: "Get Started"
-      url: "https://hugoblox.com/templates/"
+    #button:
+    #  enable: true
+    #  text: "Get Started"
+    #  url: "https://hugoblox.com/templates/"
     show_search: true
     show_theme_chooser: true
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} My Company'
+    notice: '© {2025} ALTRADERX'
 
 # Localization
 locale:
