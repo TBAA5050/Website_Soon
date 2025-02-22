@@ -12,7 +12,8 @@ sections:
     content:
       title: ALTRADERX # The title displayed in the hero section
       text: Automate. Trade. Dominate. # The subtitle or tagline
-      image: /assets/media/logon.png
+      image: 
+        filename: "logon.png"
       #primary_action:
         #text: Get Started # Text for the primary call-to-action button
         #url: https://hugoblox.com/templates/ # URL for the primary call-to-action button
