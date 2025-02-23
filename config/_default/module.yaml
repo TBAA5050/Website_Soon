@@ -9,20 +9,31 @@ imports:
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
 
 # Install any Hugo Blox within the `hugo-blox/blox/` folder
-mounts:
-  #- source: hugo-blox/blox/community
-  #  target: layouts/partials/blox/community/
-  #  includeFiles: '**.html'
-  #- source: hugo-blox/blox/all-access
-  #  target: layouts/partials/blox/
-  #  includeFiles: '**.html'
-  #- source: hugo-blox/blox
-  #  target: assets/dist/community/blox/
-  #  includeFiles: '**.css'
-  - source: layouts
-    target: layouts
-  - source: assets
-    target: assets
+hugoVersion:
+  min: "0.110.0"  # Ensure your Hugo version is compatible
+
+module:
+  mounts:
+    - source: "assets"
+      target: "assets"
+    - source: "static"
+      target: "static"
+    - source: "content"
+      target: "content"
+    - source: "layouts"
+      target: "layouts"
+    - source: "data"
+      target: "data"
+    - source: "i18n"
+      target: "i18n"
+    - source: "archetypes"
+      target: "archetypes"
+  hugoVersion:
+    extended: true  # Ensure Hugo Extended is used
+  proxy: direct  # Prevent module fetching from Hugo Module Proxy
+  workspace: true  # Enable workspace for vendored dependencies
+  replacements:
+    github.com/HugoBlox/theme-landing-page: "./vendor/github.com/HugoBlox/theme-landing-page"  # Ensure local module usage
 
 replacements:
   # Example replacement
